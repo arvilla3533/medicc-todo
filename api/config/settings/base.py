@@ -54,6 +54,7 @@ THIRD_PARTY_APPS = [
     "rest_framework",
 ]
 LOCAL_APPS = [
+    "apps.todos",
     "apps.users",
 ]
 
