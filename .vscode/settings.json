@@ -83,10 +83,7 @@
     ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
     ["(?:\\b(?:const|let)\\s+)?[\\w$_]*(?:[Cc]lassName)[\\w\\d]*\\s*(?:=|\\+=)\\s*['\"]([^'\"]*)['\"]"]
   ],
-  "tailwindCSS.experimental.configFile": {
-    "packages/components/tailwind.config.ts": "packages/components/src/**",
-    "packages/web/tailwind.config.ts": "packages/web/src/**"
-  },
+  "tailwindCSS.experimental.configFile": "apps/web/src/app/globals.css",
   "typescript.check.npmIsInstalled": true,
   "typescript.enablePromptUseWorkspaceTsdk": true,
   "[terraform]": {
