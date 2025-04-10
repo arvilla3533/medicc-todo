@@ -8,6 +8,8 @@ Use [poetry](https://python-poetry.org/docs/#installation) version >= 2.0 to ins
 poetry install
 ```
 
+Setup `.env` on `api` directory by copying contents from `env.example`
+
 ## Developing locally
 
 Configure [postgres](https://www.postgresql.org/) local setup if developing locally. Make sure to make appropriate changes on the `.env` file
@@ -46,4 +48,21 @@ docker compose up --build
 
 ```bash
 docker exec -it <api_container_name> pytest
+```
+
+### Frontend development
+
+Setup `.env` on `apps/web` directory by copying contents from `env.example`
+
+Install dependencies
+
+```bash
+cd apps/web
+yarn install
+```
+
+Run on root dir for frontend server
+
+```bash
+yarn dev
 ```
