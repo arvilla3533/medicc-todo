@@ -1,0 +1,96 @@
+{
+  "[javascript]": {
+    "editor.codeActionsOnSave": ["source.fixAll", "source.organizeImports"],
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2
+  },
+  "[javascriptreact]": {
+    "editor.codeActionsOnSave": ["source.fixAll", "source.organizeImports"],
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2
+  },
+  "[json]": {
+    "editor.codeActionsOnSave": ["source.fixAll"],
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2
+  },
+  "[python]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "explicit",
+      "source.fixAll.pylance": "never",
+      "source.fixAll.ruff": "always",
+      "source.organizeImports": "never"
+    },
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.formatOnSave": true
+  },
+  "[typescript]": {
+    "editor.codeActionsOnSave": ["source.fixAll", "source.organizeImports"],
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2
+  },
+  "[typescriptreact]": {
+    "editor.codeActionsOnSave": ["source.fixAll", "source.organizeImports"],
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.insertSpaces": true,
+  "eslint.format.enable": true,
+  "eslint.workingDirectories": [
+    {
+      "mode": "auto"
+    }
+  ],
+  "files.exclude": {
+    "**/*.pyc": true,
+    "**/.DS_Store": true,
+    "**/.git": true,
+    "**/.mypy_cache": true,
+    "**/.pytest_cache": true,
+    "**/.venv": true,
+    "**/__pycache__": true
+  },
+  "mypy-type-checker.args": ["--config-file", "${workspaceFolder}/pyproject.toml"],
+  "mypy-type-checker.cwd": "${workspaceFolder}/api",
+  "mypy-type-checker.path": ["${workspaceFolder}/.venv/bin/mypy"],
+  "prettier.configPath": ".prettierrc.js",
+  "pylint.enabled": false,
+  "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+  "python.languageServer": "Pylance",
+  "python.testing.cwd": "${workspaceFolder}/api",
+  "python.testing.pytestEnabled": true,
+  "python.testing.unittestEnabled": false,
+  "pylint.enabled": false,
+  "ruff.path": ["${workspaceFolder}/.venv/bin/ruff"],
+  "search.exclude": {
+    "**/.pnp.*": true,
+    "**/.yarn": true
+  },
+  "tailwindCSS.experimental.classRegex": [
+    ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
+    ["(?:\\b(?:const|let)\\s+)?[\\w$_]*(?:[Cc]lassName)[\\w\\d]*\\s*(?:=|\\+=)\\s*['\"]([^'\"]*)['\"]"]
+  ],
+  "tailwindCSS.experimental.configFile": {
+    "packages/components/tailwind.config.ts": "packages/components/src/**",
+    "packages/web/tailwind.config.ts": "packages/web/src/**"
+  },
+  "typescript.check.npmIsInstalled": true,
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "[terraform]": {
+    "editor.defaultFormatter": "gamunu.opentofu"
+  },
+  "yaml.customTags": ["!reference sequence"]
+}

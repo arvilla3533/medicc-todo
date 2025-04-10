@@ -1,0 +1,17 @@
+{
+  "recommendations": [
+    "bradlc.vscode-tailwindcss",
+    "charliermarsh.ruff",
+    "eamodio.gitlens",
+    "exiasr.hadolint",
+    "gamunu.opentofu",
+    "mikestead.dotenv",
+    "ms-python.mypy-type-checker",
+    "ms-python.python",
+    "ryanluker.vscode-coverage-gutters",
+    "sourcery.sourcery",
+    "VisualStudioExptTeam.intellicode-api-usage-examples",
+    "VisualStudioExptTeam.vscodeintellicode"
+  ],
+  "unwantedRecommendations": ["matangover.mypy"]
+}

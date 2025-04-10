@@ -1,0 +1,38 @@
+x-environment:
+  db: &db_environment
+    POSTGRES_USER: ${POSTGRES_USER:-user}
+    POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-password}
+    POSTGRES_DB: ${POSTGRES_DB:-postgres}
+  api: &api_environment
+    DATABASE_URL: postgres://${POSTGRES_USER:-user}:${POSTGRES_PASSWORD:-password}@db:5432/${POSTGRES_DB:-postgres}
+
+x-common-api: &api
+  image: api
+  env_file:
+    - api/.env
+  working_dir: /app/api
+  environment:
+    <<: *api_environment
+
+services:
+  db:
+    image: postgres:alpine
+    environment:
+      <<: *db_environment
+    volumes:
+      - db_data:/var/lib/postgresql/data/
+    ports:
+      - "5432:5432"
+
+  api:
+    <<: *api
+    build: .
+    volumes:
+      - ./api:/app/api
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+
+volumes:
+  db_data:
